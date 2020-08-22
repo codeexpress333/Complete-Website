@@ -1,0 +1,322 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* Navbar */
+nav {
+    height: 10vh;
+    width: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(0,0,0,0.5);
+}
+
+nav .logo {
+    margin: 0 20px;
+    text-decoration: none;
+    font-size: 22px;
+    color: #000;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li  {
+    list-style: none;
+}
+
+nav ul li a {
+    margin: 0 20px;
+    text-decoration: none;
+    padding: 7px 15px;
+    display: inline-block;
+    color: #000;
+    transition: all 0.5s ease-in-out;
+}
+
+nav ul li.active a,
+nav ul li a:hover {
+    background: #000;
+    color: #fff;
+} 
+
+nav .menu img {
+    display: block;
+    height: 30px;
+    width: 30px;
+    margin: 0 30px;
+}
+
+/* Showcase */
+.showcase {
+    height: 90vh;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('./img/Mountains1.jpg') no-repeat center center/cover;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.showcase h1 {
+    font-size: 4rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.showcase p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 18px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.showcase .btn {
+    display: inline-block;
+    padding: 10px 35px;
+    background: #fff;
+    text-decoration: none;
+    color: #000;
+}
+
+/* All Section Start */
+section {
+    min-height: 100vh;
+    width: 100%;
+    padding-top: 30px;
+}
+
+section.about {
+    background: #e5e5e5;
+    color: #333;
+    line-height: 1.5;
+    text-align: center;
+}
+
+section.about h1,
+section.project h1,
+section.resume h1,
+section.contact h1 {
+    font-size: 2.5rem;
+}
+
+section.about p,
+section.project p,
+section.resume p,
+section.contact p {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 10px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.about .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about .container .card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about .container .card img {
+    max-width: 400px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.about .container .card p {
+    max-width: 700px;
+    margin: 0 auto;
+    color: #222;
+    padding: 30px;
+}
+
+/* Project Section */
+section.project {
+    background: #f8f9f8;
+    color: #111;
+    text-align: center;
+}
+
+.project .card {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.project .card .box {
+    height: 420px;
+    width: 300px;
+    border: 3px solid #333;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: inset -3px -3px 3px rgba(0,0,0,0.5),inset -3px -3px 3px rgba(0,0,0,0.5);
+}
+
+.project .card .box img {
+    max-width: 250px;
+}
+
+.project .card .box a {
+    display: inline-block;
+    padding: 10px 25px;
+    background: #333;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 20px;
+}
+
+
+/* Resume Section */
+section.resume {
+    background: #f4f5f4;
+    color: #333;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.resume .timeline {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px 0;
+    position: relative;
+}
+
+.resume .timeline .right,
+.resume .timeline .left {
+    height: 300px;
+    width: 300px;
+    border: 1px solid #3d3d3d;
+    padding: 20px;
+    background: #000;
+    color: #fff;
+    opacity: 0.5;
+}
+
+.resume .timeline .right:hover,
+.resume .timeline .left:hover {
+    opacity: 1;
+} 
+
+.resume .timeline .right ul, 
+.resume .timeline .left ul {
+    list-style: none;
+    margin: 10px;
+    border-bottom: 1px solid #ccc;
+} 
+
+.resume .timeline .right a, 
+.resume .timeline .left a {
+    text-decoration: none;
+    color: #ccc;
+}
+
+.resume .timeline .right a span, 
+.resume .timeline .left a span {
+    color: aqua;
+}
+
+/* Contact Section */
+section.contact {
+    background: #333;
+    color: #fff;
+    line-height: 1.5;
+    text-align: center;
+}
+
+section.contact form label {
+    font-size: 22px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.contact form input,
+section.contact form textarea {
+    width: 80%;
+    height: 40px;
+    margin: 0 auto;
+    border: 0;
+    outline: none;
+    background: transparent;
+    border-bottom: 2px solid #fff;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+section.contact form textarea {
+    height: 140px;
+    resize: none;
+}
+
+::placeholder {
+    color: #ccc;
+}
+
+.contact button {
+    display: inline-block;
+    padding: 10px 40px;
+    background: #fff;
+    color: #000;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+/* Footer */
+footer {
+    padding: 40px;
+    text-align: center;
+    color: #333;
+}
+
+footer span {
+    color: red;
+}
+
+/* Media Query For Responsive */
+@media (max-width: 900px) {
+    nav ul {
+        display: none;
+    }
+    nav .menu img {
+        display: block;
+        height: 36px;
+        width: 36px;
+        margin: 0 30px;
+    }
+    .about .container .card {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .project .card {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .project .card .box {
+        margin: 20px;
+    }
+    .resume .timeline {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .resume .timeline .left {
+        margin: 10px;
+    }
+}
